@@ -1,0 +1,67 @@
+
+
+        <!Doctype html>
+        <html>
+        <style>
+        .btn-group button {
+          background-color: #523a66; /* Green background */
+          border: 1px solid rgb(72, 64, 95); /* Green border */
+          color: rgb(232, 229, 243); /* White text */
+          padding: 15px 10px; /* Some padding */
+          cursor: pointer; /* Pointer/hand icon */
+          float: up; /* Float the buttons side by side */
+        }
+        
+        
+        /* Clear floats (clearfix hack) */
+        .btn-group:after {
+          content: "";
+          clear: both;
+          display: table;
+        }
+        
+        .btn-group button:not(:last-child) {
+          border-right: none; /* Prevent double borders */
+        }
+        
+        /* Add a background color on hover */
+        .btn-group button:hover {
+          background-color: #4f6a70;
+        }
+        </style>
+        <body>
+        
+        <h1>Robotics Base Control Panel</h1>
+        
+         
+
+            <p>Five buttons:</p>
+            <div class="btn-group" style="width:100%">
+              <button style="width:33.3%">Left</button>
+              <button style="width:33.3%">Right</button>
+              <button style="width:33.3%">Forward</button>
+              <button style="width:33.3%">Backward</button>
+            </div>
+            <dif class="btn-group" style="width:100%">
+                <button style="width:67%">STOP</button>
+            </div>
+            <script>
+              window.watsonAssistantChatOptions = {
+                  integrationID: "a78657ac-d6b1-417f-b913-7878c736c7e3", // The ID of this integration.
+                  region: "eu-gb", // The region your integration is hosted in.
+                  serviceInstanceID: "4d99b413-9edf-4ce3-85cc-ecdb42146a9f", // The ID of your service instance.
+                  onLoad: function(instance) { instance.render(); }
+                };
+              setTimeout(function(){
+                const t=document.createElement('script');
+                t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+                document.head.appendChild(t);
+              });
+            </script>
+       
+        
+        </body>
+        </html>
+
+        <link href="testT3.css" rel="stylesheet"> 
+
